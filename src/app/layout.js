@@ -1,4 +1,5 @@
 import "./globals.css";
+import Providers from "./providers";
 
 // la variable metada, nos sirve para el seo, solamente es 1 ya que estamos realizando una SPA
 export const metadata = {
@@ -12,7 +13,7 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ca">
       <body className="min-h-screen bg-slate-50 text-slate-800 mt-50">
-        {children}
+        <Providers>{children}</Providers>
       </body>
     </html>
   );
